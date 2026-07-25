@@ -81,7 +81,9 @@ const BookResults: React.FC = () => {
   }
 
   const { headers, rows, nameHeader } = data;
-  const winners = rows.slice(0, 3);
+  // Rank-based, not a fixed slice(0, 3): a tie for 1st/2nd/3rd means more
+  // than 3 rows can share rank <= 3, and all of them should podium together.
+  const winners = rows.filter((row) => row.rank <= 3);
 
   return (
     <div className="container">
@@ -96,9 +98,9 @@ const BookResults: React.FC = () => {
           <p>No results yet for this book.</p>
         ) : (
           <div className="podium">
-            {winners.map((row, idx) => (
-              <div key={`${row.email}-${idx}`} className={`podium-card podium-${idx + 1}`}>
-                <div className="podium-medal">{MEDALS[idx]}</div>
+            {winners.map((row) => (
+              <div key={row.email} className={`podium-card podium-${row.rank}`}>
+                <div className="podium-medal">{MEDALS[row.rank - 1]}</div>
                 <div className="podium-info">
                   <div className="podium-name" title={row.name || 'Unnamed participant'}>
                     {row.name || 'Unnamed participant'}
