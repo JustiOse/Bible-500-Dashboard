@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Bible-500-Dashboard/static/css/main.31f9eadb.css",
+    "main.css": "/Bible-500-Dashboard/static/css/main.a159f13a.css",
     "main.js": "/Bible-500-Dashboard/static/js/main.ff7b0336.js",
     "static/media/9. Samuel.csv": "/Bible-500-Dashboard/static/media/9. Samuel.3001077b2bf2c9ddb838.csv",
     "static/media/19. Psalms.csv": "/Bible-500-Dashboard/static/media/19. Psalms.b0e7d017c4e05ffb9808.csv",
@@ -56,11 +56,11 @@
     "static/media/Titus.csv": "/Bible-500-Dashboard/static/media/Titus.cdbbf0cdb0ea2befb0a6.csv",
     "static/media/8. Ruth.csv": "/Bible-500-Dashboard/static/media/8. Ruth.cb6dee4e200e6fa73754.csv",
     "index.html": "/Bible-500-Dashboard/index.html",
-    "main.31f9eadb.css.map": "/Bible-500-Dashboard/static/css/main.31f9eadb.css.map",
+    "main.a159f13a.css.map": "/Bible-500-Dashboard/static/css/main.a159f13a.css.map",
     "main.ff7b0336.js.map": "/Bible-500-Dashboard/static/js/main.ff7b0336.js.map"
   },
   "entrypoints": [
-    "static/css/main.31f9eadb.css",
+    "static/css/main.a159f13a.css",
     "static/js/main.ff7b0336.js"
   ]
 }
