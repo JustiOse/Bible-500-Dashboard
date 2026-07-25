@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Bible-500-Dashboard/static/css/main.31f9eadb.css",
-    "main.js": "/Bible-500-Dashboard/static/js/main.787caf29.js",
+    "main.js": "/Bible-500-Dashboard/static/js/main.ff7b0336.js",
     "static/media/9. Samuel.csv": "/Bible-500-Dashboard/static/media/9. Samuel.3001077b2bf2c9ddb838.csv",
     "static/media/19. Psalms.csv": "/Bible-500-Dashboard/static/media/19. Psalms.b0e7d017c4e05ffb9808.csv",
     "static/media/11. Chronicles.csv": "/Bible-500-Dashboard/static/media/11. Chronicles.80fedf8a5819ed01e029.csv",
@@ -57,10 +57,10 @@
     "static/media/8. Ruth.csv": "/Bible-500-Dashboard/static/media/8. Ruth.cb6dee4e200e6fa73754.csv",
     "index.html": "/Bible-500-Dashboard/index.html",
     "main.31f9eadb.css.map": "/Bible-500-Dashboard/static/css/main.31f9eadb.css.map",
-    "main.787caf29.js.map": "/Bible-500-Dashboard/static/js/main.787caf29.js.map"
+    "main.ff7b0336.js.map": "/Bible-500-Dashboard/static/js/main.ff7b0336.js.map"
   },
   "entrypoints": [
     "static/css/main.31f9eadb.css",
-    "static/js/main.787caf29.js"
+    "static/js/main.ff7b0336.js"
   ]
 }
