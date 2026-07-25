@@ -454,14 +454,6 @@
   text-overflow: ellipsis;
 }
 
-.podium-email {
-  font-size: 0.75rem;
-  color: var(--ink-soft);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .podium-score {
   font-size: 1.3rem;
   font-weight: 800;

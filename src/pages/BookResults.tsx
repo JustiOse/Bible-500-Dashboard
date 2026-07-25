@@ -81,9 +81,16 @@ const BookResults: React.FC = () => {
   }
 
   const { headers, rows, nameHeader } = data;
-  // Rank-based, not a fixed slice(0, 3): a tie for 1st/2nd/3rd means more
-  // than 3 rows can share rank <= 3, and all of them should podium together.
-  const winners = rows.filter((row) => row.rank <= 3);
+  // One card per position (1st/2nd/3rd), not per row: when scores tie,
+  // everyone at that rank is listed together on the same card.
+  const podiumGroups = [1, 2, 3]
+    .map((rank) => {
+      const tied = rows.filter((row) => row.rank === rank);
+      return tied.length > 0
+        ? { rank, score: tied[0].total, names: tied.map((row) => row.name || 'Unnamed participant') }
+        : null;
+    })
+    .filter((group): group is { rank: number; score: number; names: string[] } => group !== null);
 
   return (
     <div className="container">
@@ -94,22 +101,21 @@ const BookResults: React.FC = () => {
 
       <div className="container container-tight">
         <h2 style={{ marginBottom: '10px' }}>🏆 Winners</h2>
-        {winners.length === 0 ? (
+        {podiumGroups.length === 0 ? (
           <p>No results yet for this book.</p>
         ) : (
           <div className="podium">
-            {winners.map((row) => (
-              <div key={row.email} className={`podium-card podium-${row.rank}`}>
-                <div className="podium-medal">{MEDALS[row.rank - 1]}</div>
+            {podiumGroups.map((group) => (
+              <div key={group.rank} className={`podium-card podium-${group.rank}`}>
+                <div className="podium-medal">{MEDALS[group.rank - 1]}</div>
                 <div className="podium-info">
-                  <div className="podium-name" title={row.name || 'Unnamed participant'}>
-                    {row.name || 'Unnamed participant'}
-                  </div>
-                  <div className="podium-email" title={row.maskedEmail}>
-                    {row.maskedEmail}
-                  </div>
+                  {group.names.map((name, i) => (
+                    <div key={`${group.rank}-${i}`} className="podium-name" title={name}>
+                      {name}
+                    </div>
+                  ))}
                 </div>
-                <div className="podium-score">{row.total}</div>
+                <div className="podium-score">{group.score}</div>
               </div>
             ))}
           </div>
