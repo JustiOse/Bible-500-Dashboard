@@ -81,16 +81,17 @@ const BookResults: React.FC = () => {
   }
 
   const { headers, rows, nameHeader } = data;
-  // Podium fills 3 positions from the 3 highest distinct scores, independent
-  // of the Full Results table's rank column (which uses standard competition
-  // ranking and skips a position after a tie, e.g. 1, 2, 2, 4). A tie for
-  // 2nd here still leaves a 3rd-place card for the next distinct score.
-  const distinctScoresDesc = Array.from(new Set(rows.map((row) => row.total))).slice(0, 3);
-  const podiumGroups = distinctScoresDesc.map((score, i) => ({
-    rank: i + 1,
-    score,
-    names: rows.filter((row) => row.total === score).map((row) => row.name || 'Unnamed participant'),
-  }));
+  // One card per position (1st/2nd/3rd): row.rank is dense (1, 2, 2, 3, ...),
+  // matching the organizers' own rank labels found in several source CSVs,
+  // so everyone tied at a position shares that position's card.
+  const podiumGroups = [1, 2, 3]
+    .map((rank) => {
+      const tied = rows.filter((row) => row.rank === rank);
+      return tied.length > 0
+        ? { rank, score: tied[0].total, names: tied.map((row) => row.name || 'Unnamed participant') }
+        : null;
+    })
+    .filter((group): group is { rank: number; score: number; names: string[] } => group !== null);
 
   return (
     <div className="container">

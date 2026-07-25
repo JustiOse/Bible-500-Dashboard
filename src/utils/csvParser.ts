@@ -80,11 +80,15 @@ export function parseBookCsv(csvText: string): ParsedBook {
   }
 
   parsedRows.sort((a, b) => b.total - a.total);
+  // Dense ranking (1, 2, 2, 3, ...), not competition ranking (1, 2, 2, 4):
+  // a handful of source CSVs (Luke, Psalms, Zechariah, ...) carry the
+  // organizers' own "1st/2nd/3rd" labels, and those never skip a place
+  // after a tie — e.g. two people tied for 2nd is still followed by a 3rd.
   let rank = 0;
   let previousTotal: number | null = null;
-  parsedRows.forEach((row, idx) => {
+  parsedRows.forEach((row) => {
     if (row.total !== previousTotal) {
-      rank = idx + 1;
+      rank += 1;
       previousTotal = row.total;
     }
     row.rank = rank;
