@@ -2,7 +2,9 @@
 // 1-42. Unlike Old Testament CSVs, New Testament filenames don't carry a
 // leading number (see books.ts), so order is looked up here by name instead.
 // Combined-part books (Corinthians, Thessalonians, Timothy, Peter) are
-// listed once since each CSV combines both parts into one book.
+// listed once since each CSV combines both parts into one book. 1, 2 & 3
+// John and Jude are combined into a single CSV/book, so they share one slot
+// right after Peter and before Revelation.
 export const NEW_TESTAMENT_ORDER: Record<string, number> = {
   Matthew: 43,
   Mark: 44,
@@ -22,6 +24,7 @@ export const NEW_TESTAMENT_ORDER: Record<string, number> = {
   Hebrews: 58,
   James: 59,
   Peter: 60,
+  '1, 2, 3 John and Jude': 61,
   Jude: 61,
   Revelation: 62,
 };

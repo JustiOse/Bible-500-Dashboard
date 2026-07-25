@@ -1,11 +1,11 @@
 .header {
-  background: rgba(255, 255, 255, 0.98);
+  background: rgba(16, 19, 28, 0.85);
   backdrop-filter: blur(15px);
-  border-bottom: 2px solid rgba(165, 42, 42, 0.2);
+  border-bottom: 1px solid rgba(202, 162, 62, 0.35);
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 4px 20px rgba(139, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 .header-content {
@@ -30,7 +30,8 @@
   margin: 0;
   font-size: 1.8rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #A52A2A 0%, #8B0000 100%);
+  font-family: 'Cinzel', serif;
+  background: linear-gradient(135deg, #e8c766 0%, #caa23e 50%, #e8c766 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -39,8 +40,8 @@
 
 .logo-icon {
   font-size: 2rem;
-  color: #A52A2A;
-  filter: drop-shadow(0 2px 4px rgba(165, 42, 42, 0.3));
+  color: #caa23e;
+  filter: drop-shadow(0 2px 6px rgba(202, 162, 62, 0.5));
 }
 
 .nav {
@@ -51,7 +52,7 @@
 
 .nav-link {
   text-decoration: none;
-  color: #495057;
+  color: #e8e3d6;
   font-weight: 500;
   padding: 12px 20px;
   border-radius: 8px;
@@ -62,8 +63,8 @@
 }
 
 .nav-link:hover {
-  color: #A52A2A;
-  background: rgba(165, 42, 42, 0.1);
+  color: #e8c766;
+  background: rgba(202, 162, 62, 0.12);
   text-decoration: none;
   transform: translateY(-1px);
 }
@@ -75,7 +76,7 @@
   left: 50%;
   width: 0;
   height: 2px;
-  background: linear-gradient(135deg, #A52A2A 0%, #8B0000 100%);
+  background: linear-gradient(135deg, #caa23e 0%, #e8c766 100%);
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
@@ -85,8 +86,8 @@
 }
 
 .nav-link.active {
-  color: #A52A2A;
-  background: rgba(165, 42, 42, 0.15);
+  color: #e8c766;
+  background: rgba(202, 162, 62, 0.18);
   font-weight: 600;
 }
 

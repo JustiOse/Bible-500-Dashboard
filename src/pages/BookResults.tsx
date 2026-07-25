@@ -100,8 +100,12 @@ const BookResults: React.FC = () => {
               <div key={`${row.email}-${idx}`} className={`podium-card podium-${idx + 1}`}>
                 <div className="podium-medal">{MEDALS[idx]}</div>
                 <div className="podium-info">
-                  <div className="podium-name">{row.name || 'Unnamed participant'}</div>
-                  <div className="podium-email">{row.maskedEmail}</div>
+                  <div className="podium-name" title={row.name || 'Unnamed participant'}>
+                    {row.name || 'Unnamed participant'}
+                  </div>
+                  <div className="podium-email" title={row.maskedEmail}>
+                    {row.maskedEmail}
+                  </div>
                 </div>
                 <div className="podium-score">{row.total}</div>
               </div>
@@ -131,6 +135,7 @@ const BookResults: React.FC = () => {
                   <th
                     key={header}
                     className={header === nameHeader ? 'sticky-col sticky-col-name' : undefined}
+                    title={header}
                   >
                     {header}
                   </th>
@@ -147,6 +152,7 @@ const BookResults: React.FC = () => {
                     <td
                       key={header}
                       className={header === nameHeader ? 'sticky-col sticky-col-name' : undefined}
+                      title={row.cells[header]}
                     >
                       {row.cells[header]}
                     </td>

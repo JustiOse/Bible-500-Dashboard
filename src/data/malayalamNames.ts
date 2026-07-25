@@ -70,6 +70,7 @@ export const MALAYALAM_BOOK_NAMES: Record<string, string> = {
   James: 'യാക്കോബ്',
   Peter: 'പത്രോസ്',
   Jude: 'യൂദാസ്',
+  '1, 2, 3 John and Jude': 'യോഹന്നാൻ, യൂദാസ്',
   Revelation: 'വെളിപാട്',
 };
 
