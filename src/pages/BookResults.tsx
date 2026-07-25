@@ -108,9 +108,10 @@ const BookResults: React.FC = () => {
             {podiumGroups.map((group) => (
               <div key={group.rank} className={`podium-card podium-${group.rank}`}>
                 <div className="podium-medal">{MEDALS[group.rank - 1]}</div>
-                <div className="podium-info">
+                <div className={`podium-info ${group.names.length > 1 ? 'podium-info-tied' : ''}`}>
                   {group.names.map((name, i) => (
                     <div key={`${group.rank}-${i}`} className="podium-name" title={name}>
+                      {group.names.length > 1 && <span className="podium-name-bullet">•</span>}
                       {name}
                     </div>
                   ))}

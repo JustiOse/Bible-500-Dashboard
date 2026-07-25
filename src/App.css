@@ -454,6 +454,20 @@
   text-overflow: ellipsis;
 }
 
+.podium-info-tied .podium-name {
+  padding: 3px 0;
+}
+
+.podium-info-tied .podium-name:not(:last-child) {
+  border-bottom: 1px dashed var(--gold-dim);
+  margin-bottom: 2px;
+}
+
+.podium-name-bullet {
+  color: var(--gold);
+  margin-right: 5px;
+}
+
 .podium-score {
   font-size: 1.3rem;
   font-weight: 800;
