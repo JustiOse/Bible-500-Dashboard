@@ -168,6 +168,38 @@
   background: rgba(165, 42, 42, 0.05);
 }
 
+.testament-section summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.testament-section summary::-webkit-details-marker {
+  display: none;
+}
+
+.testament-section summary h2 {
+  margin-bottom: 0;
+}
+
+.testament-section summary::before {
+  content: '▶';
+  font-size: 0.9rem;
+  color: #A52A2A;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.testament-section[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.testament-section .book-grid {
+  margin-top: 16px;
+}
+
 .book-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));

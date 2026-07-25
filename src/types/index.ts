@@ -4,6 +4,7 @@ export interface Book {
   displayName: string;
   slug: string;
   url: string;
+  testament: 'old' | 'new';
 }
 
 export interface ParsedRow {

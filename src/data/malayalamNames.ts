@@ -47,6 +47,30 @@ export const MALAYALAM_BOOK_NAMES: Record<string, string> = {
   Haggai: 'ഹഗ്ഗായി',
   Zechariah: 'സഖറിയാ',
   Malachi: 'മലാക്കി',
+
+  // New Testament. Combined-part books (Corinthians, Thessalonians, Timothy,
+  // Peter) use the unprefixed form since each of our CSVs combines both
+  // parts (1 & 2) into one book, same convention as the Old Testament above.
+  Matthew: 'മത്തായി',
+  Mark: 'മർക്കോസ്',
+  Luke: 'ലൂക്കാ',
+  John: 'യോഹന്നാൻ',
+  Acts: 'അപ്പ. പ്രവർത്തനങ്ങൾ',
+  Romans: 'റോമാ',
+  Corinthians: 'കൊറിന്തോസ്',
+  Galatians: 'ഗലാത്തിയാ',
+  Ephesians: 'എഫേസോസ്',
+  Philippians: 'ഫിലിപ്പി',
+  Colossians: 'കൊളോസോസ്',
+  Thessalonians: 'തെസലോനിക്കാ',
+  Timothy: 'തിമോത്തേയോസ്',
+  Titus: 'തീത്തോസ്',
+  Philemon: 'ഫിലേമോൻ',
+  Hebrews: 'ഹെബ്രായർ',
+  James: 'യാക്കോബ്',
+  Peter: 'പത്രോസ്',
+  Jude: 'യൂദാസ്',
+  Revelation: 'വെളിപാട്',
 };
 
 export function toMalayalamName(englishName: string): string {
