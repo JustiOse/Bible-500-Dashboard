@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Bible-500-Dashboard/static/css/main.a159f13a.css",
-    "main.js": "/Bible-500-Dashboard/static/js/main.ff7b0336.js",
+    "main.css": "/Bible-500-Dashboard/static/css/main.f8852a42.css",
+    "main.js": "/Bible-500-Dashboard/static/js/main.acf63980.js",
     "static/media/9. Samuel.csv": "/Bible-500-Dashboard/static/media/9. Samuel.3001077b2bf2c9ddb838.csv",
-    "static/media/19. Psalms.csv": "/Bible-500-Dashboard/static/media/19. Psalms.b0e7d017c4e05ffb9808.csv",
-    "static/media/11. Chronicles.csv": "/Bible-500-Dashboard/static/media/11. Chronicles.80fedf8a5819ed01e029.csv",
+    "static/media/19. Psalms.csv": "/Bible-500-Dashboard/static/media/19. Psalms.2b56cc109bd9c24b7be8.csv",
     "static/media/25. Isaiah.csv": "/Bible-500-Dashboard/static/media/25. Isaiah.c3d639c742ff568708d9.csv",
+    "static/media/11. Chronicles.csv": "/Bible-500-Dashboard/static/media/11. Chronicles.6de27c889ab1ab57f6d3.csv",
     "static/media/24. Sirach.csv": "/Bible-500-Dashboard/static/media/24. Sirach.f498f20be60bc64fad88.csv",
     "static/media/26. Jeremiah .csv": "/Bible-500-Dashboard/static/media/26. Jeremiah .bbdab31cf345476c3839.csv",
-    "static/media/10. Kings.csv": "/Bible-500-Dashboard/static/media/10. Kings.0df514be29b824336df8.csv",
+    "static/media/10. Kings.csv": "/Bible-500-Dashboard/static/media/10. Kings.e4a205a17294c4a0bbb7.csv",
     "static/media/1. Genesis.csv": "/Bible-500-Dashboard/static/media/1. Genesis.176c4c6ce3ab38d30c24.csv",
     "static/media/29. Ezekiel.csv": "/Bible-500-Dashboard/static/media/29. Ezekiel.e6be1ee2caad46f1f800.csv",
     "static/media/18. Job.csv": "/Bible-500-Dashboard/static/media/18. Job.28ee53e54eb1f769a398.csv",
@@ -18,10 +18,16 @@
     "static/media/Corinthians.csv": "/Bible-500-Dashboard/static/media/Corinthians.ebada917443f7f8c886a.csv",
     "static/media/5. Deuteronomy.csv": "/Bible-500-Dashboard/static/media/5. Deuteronomy.532ec025e35331f42b2b.csv",
     "static/media/4. Numbers.csv": "/Bible-500-Dashboard/static/media/4. Numbers.bf61357079b46e17af92.csv",
+    "static/media/Matthew.csv": "/Bible-500-Dashboard/static/media/Matthew.5334556ad8309c6d281b.csv",
+    "static/media/Acts.csv": "/Bible-500-Dashboard/static/media/Acts.ec3e0efb21103cef1d36.csv",
     "static/media/23. Wisdom.csv": "/Bible-500-Dashboard/static/media/23. Wisdom.51c1d90451aa78e74ae6.csv",
+    "static/media/Luke.csv": "/Bible-500-Dashboard/static/media/Luke.9fbc490939f13269bb02.csv",
     "static/media/3. Leviticus.csv": "/Bible-500-Dashboard/static/media/3. Leviticus.457f1666c92dee7b2282.csv",
+    "static/media/John.csv": "/Bible-500-Dashboard/static/media/John.652765cb018b4a2583d5.csv",
+    "static/media/Revelation.csv": "/Bible-500-Dashboard/static/media/Revelation.b07cd917da93e9ecbc7f.csv",
     "static/media/6. Joshua.csv": "/Bible-500-Dashboard/static/media/6. Joshua.430984a9f14dcf405664.csv",
     "static/media/15. Judith.csv": "/Bible-500-Dashboard/static/media/15. Judith.6f8007da5f2e8deea139.csv",
+    "static/media/Mark.csv": "/Bible-500-Dashboard/static/media/Mark.cc9537a2923c61fd937e.csv",
     "static/media/16. Esther.csv": "/Bible-500-Dashboard/static/media/16. Esther.c8807f44f85046e24a3d.csv",
     "static/media/7. Judges.csv": "/Bible-500-Dashboard/static/media/7. Judges.f83634ae069dcc475dcd.csv",
     "static/media/22. Song of Songs.csv": "/Bible-500-Dashboard/static/media/22. Song of Songs.b9779a57e26399d0fb03.csv",
@@ -37,8 +43,11 @@
     "static/media/40. Haggai.csv": "/Bible-500-Dashboard/static/media/40. Haggai.d85092b17943d3a1abb9.csv",
     "static/media/33. Amos .csv": "/Bible-500-Dashboard/static/media/33. Amos .d685d2e0ae8e4c9d5ebf.csv",
     "static/media/36. Micah.csv": "/Bible-500-Dashboard/static/media/36. Micah.09d3d1aa904af9994f17.csv",
+    "static/media/1, 2, 3 John and Jude.csv": "/Bible-500-Dashboard/static/media/1, 2, 3 John and Jude.0343f639936902c72366.csv",
     "static/media/27. Lamentations.csv": "/Bible-500-Dashboard/static/media/27. Lamentations.7189fd8e90cb8237f1f3.csv",
     "static/media/Timothy.csv": "/Bible-500-Dashboard/static/media/Timothy.34793d93764df111e0c2.csv",
+    "static/media/Peter.csv": "/Bible-500-Dashboard/static/media/Peter.437d50574b91d8c6a1ec.csv",
+    "static/media/Thessalonians.csv": "/Bible-500-Dashboard/static/media/Thessalonians.e4900cd49eaf24a75c05.csv",
     "static/media/Ephesians.csv": "/Bible-500-Dashboard/static/media/Ephesians.ec7e7b34175fb612e8a6.csv",
     "static/media/Galatians.csv": "/Bible-500-Dashboard/static/media/Galatians.9c3f5f2d6ceeda41b0e1.csv",
     "static/media/28.  Baruch.csv": "/Bible-500-Dashboard/static/media/28.  Baruch.011cb1f892ee1a19cb4b.csv",
@@ -56,11 +65,11 @@
     "static/media/Titus.csv": "/Bible-500-Dashboard/static/media/Titus.cdbbf0cdb0ea2befb0a6.csv",
     "static/media/8. Ruth.csv": "/Bible-500-Dashboard/static/media/8. Ruth.cb6dee4e200e6fa73754.csv",
     "index.html": "/Bible-500-Dashboard/index.html",
-    "main.a159f13a.css.map": "/Bible-500-Dashboard/static/css/main.a159f13a.css.map",
-    "main.ff7b0336.js.map": "/Bible-500-Dashboard/static/js/main.ff7b0336.js.map"
+    "main.f8852a42.css.map": "/Bible-500-Dashboard/static/css/main.f8852a42.css.map",
+    "main.acf63980.js.map": "/Bible-500-Dashboard/static/js/main.acf63980.js.map"
   },
   "entrypoints": [
-    "static/css/main.a159f13a.css",
-    "static/js/main.ff7b0336.js"
+    "static/css/main.f8852a42.css",
+    "static/js/main.acf63980.js"
   ]
 }
